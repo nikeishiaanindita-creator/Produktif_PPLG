@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>VIDEO KETCEH</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: pink;
+            color: black;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 20px 0;
+            font-family: Georgia, serif;
+        }
+
+        .video-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            padding: 10px;
+        }
+
+        .video {
+            position: relative;
+            background-color: white;
+            border: 2px solid white;
+            overflow: hidden;
+            border-radius: 6px;
+        }
+
+        .video a {
+            display: block;
+            position: relative;
+            text-decoration: none;
+        }
+
+        .video img {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* Tombol PLAY */
+        .play-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            width: 55px;
+            height: 55px;
+
+            background-color: rgba(255, 0, 0, 0.9);
+            color: white;
+
+            border-radius: 50%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-size: 25px;
+            padding-left: 4px;
+
+            transition: 0.2s;
+        }
+
+        .video a:hover .play-button {
+            transform: translate(-50%, -50%) scale(1.15);
+        }
+
+        /* Efek hover thumbnail */
+        .video img {
+            transition: 0.2s;
+        }
+
+        .video a:hover img {
+            transform: scale(1.03);
+        }
+
+        /* Tablet */
+        @media (max-width: 800px) {
+            .video-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* HP */
+        @media (max-width: 500px) {
+            .video-container {
+                grid-template-columns: 1fr;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>VIDEO KETCEH</h1>
+
+    <div class="video-container">
+
+        <!-- YOUTUBE 1 -->
+        <div class="video">
+            <a href="https://www.youtube.com/watch?v=KaNnZOnCI-M" target="_blank">
+                <img
+                    src="https://img.youtube.com/vi/KaNnZOnCI-M/hqdefault.jpg"
+                    alt="YouTube Video 1"
+                    loading="lazy">
+                <span class="play-button">▶</span>
+            </a>
+        </div>
+
+
+        <!-- YOUTUBE 2 -->
+        <div class="video">
+            <a href="https://www.youtube.com/watch?v=lyO3aKs3Ueg" target="_blank">
+                <img
+                    src="https://img.youtube.com/vi/lyO3aKs3Ueg/hqdefault.jpg"
+                    alt="YouTube Video 2"
+                    loading="lazy">
+                <span class="play-button">▶</span>
+            </a>
+        </div>
+
+
+        <!-- YOUTUBE 3 -->
+        <div class="video">
+            <a href="https://www.youtube.com/watch?v=rA7N5n2gl_E" target="_blank">
+                <img
+                    src="https://img.youtube.com/vi/rA7N5n2gl_E/hqdefault.jpg"
+                    alt="YouTube Video 3"
+                    loading="lazy">
+                <span class="play-button">▶</span>
+            </a>
+        </div>
+
+
+        <!-- YOUTUBE 4 -->
+        <div class="video">
+            <a href="https://www.youtube.com/watch?v=if51hMqeUtw" target="_blank">
+                <img
+                    src="https://img.youtube.com/vi/if51hMqeUtw/hqdefault.jpg"
+                    alt="YouTube Video 4"
+                    loading="lazy">
+                <span class="play-button">▶</span>
+            </a>
+        </div>
+
+
+        <!-- YOUTUBE 5 -->
+        <div class="video">
+            <a href="https://www.youtube.com/watch?v=Lt5Rsa0t1mY" target="_blank">
+                <img
+                    src="https://img.youtube.com/vi/Lt5Rsa0t1mY/hqdefault.jpg"
+                    alt="YouTube Video 5"
+                    loading="lazy">
+                <span class="play-button">▶</span>
+            </a>
+        </div>
+
+
+        <!-- YOUTUBE 6 -->
+        <div class="video">
+            <a href="https://www.youtube.com/watch?v=3m6TS3JBOJU" target="_blank">
+                <img
+                    src="https://img.youtube.com/vi/3m6TS3JBOJU/hqdefault.jpg"
+                    alt="YouTube Video 6"
+                    loading="lazy">
+                <span class="play-button">▶</span>
+            </a>
+        </div>
+
+
+        <!-- DAILYMOTION 1 -->
+        <div class="video">
+            <a href="https://dai.ly/xbchewi" target="_blank">
+                <img
+                    src="https://www.dailymotion.com/thumbnail/video/xbchewi"
+                    alt="Dailymotion Video 1"
+                    loading="lazy">
+                <span class="play-button">▶</span>
+            </a>
+        </div>
+
+
+        <!-- DAILYMOTION 2 -->
+        <div class="video">
+            <a href="https://dai.ly/xb6bxoy" target="_blank">
+                <img
+                    src="https://www.dailymotion.com/thumbnail/video/xb6bxoy"
+                    alt="Dailymotion Video 2"
+                    loading="lazy">
+                <span class="play-button">▶</span>
+            </a>
+        </div>
+
+
+        <!-- DAILYMOTION 3 -->
+        <div class="video">
+            <a href="https://dai.ly/xbcfzve" target="_blank">
+                <img
+                    src="https://www.dailymotion.com/thumbnail/video/xbcfzve"
+                    alt="Dailymotion Video 3"
+                    loading="lazy">
+                <span class="play-button">▶</span>
+            </a>
+        </div>
+
+
+        <!-- DAILYMOTION 4 -->
+        <div class="video">
+            <a href="https://dai.ly/xbciyc2" target="_blank">
+                <img
+                    src="https://www.dailymotion.com/thumbnail/video/xbciyc2"
+                    alt="Dailymotion Video 4"
+                    loading="lazy">
+                <span class="play-button">▶</span>
+            </a>
+        </div>
+
+
+        <!-- DAILYMOTION 5 -->
+        <div class="video">
+            <a href="https://dai.ly/xbca212" target="_blank">
+                <img
+                    src="https://www.dailymotion.com/thumbnail/video/xbca212"
+                    alt="Dailymotion Video 5"
+                    loading="lazy">
+                <span class="play-button">▶</span>
+            </a>
+        </div>
+
+    </div>
+
+</body>
+</html>
